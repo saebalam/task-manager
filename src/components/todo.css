@@ -1,0 +1,23 @@
+.task-wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 96%;
+    background-color: blueviolet;
+    padding: 4px;
+    margin: 0px auto;
+    margin-top: 9px;
+
+}
+
+.task-wrapper .button-group .icon{
+    margin: 5px;
+    cursor: pointer;
+}
+
+.task-wrapper .button-group .edit:hover{
+    color: rgb(130, 151, 243);
+}
+
+.task-wrapper .button-group .trash:hover{
+    color: #f50002;
+}

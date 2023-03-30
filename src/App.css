@@ -1,38 +1,146 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+  box-sizing: border-box;
+}
+body{
+  overflow: hidden;
+}
+.app {
+  background-color: #b09dc26e;
+  height: 100vh;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
+.wrapper{
+  position: relative;
+  background-color: rgb(28, 7, 48);
+  width: 25%;
+  margin: 0 auto;
+  height: 465px;
+  color: rgb(231, 227, 227);
+  padding: 0 10px;
+  /* border: 1px solid yellow; */
+  border-radius: 4px;
+  box-shadow: rgba(28, 7, 48) 0px 3px 8px;
+}
+
+
+.header{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+.todo-img{
+  width: 50px;
+
+}
+
+.search-input{
+  margin-top: 25px;
+  background-color: #1c0730;
   color: white;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid white;
 }
 
-.App-link {
-  color: #61dafb;
+.search-input:focus-visible{
+  outline: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.form{
+  width: 97%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: auto auto;
+  margin-top: 25px;
+  margin-bottom: 12px;
+}
+
+.form input{
+  position: relative;
+  width: 100%;
+  padding: 6px; 
+  box-sizing: border-box;
+}
+.form input:focus-visible{
+  outline: none;
+}
+.form button{
+  position: absolute;
+  right: 0;
+  width: 20%;
+  padding: 7.2px 2px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: white;
+  background: blueviolet;
+}
+.form button:hover{
+  background-color: rgb(116, 28, 198);
+}
+
+@media only screen and (max-width: 991px){
+  .wrapper{
+    width: 35%;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media only screen and (max-width: 821px){
+  .wrapper{
+    width: 75%;
+  }
+  .form button{
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 791px){
+  .wrapper{
+    width: 65%;
+  }
+  .form button{
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 691px){
+  .wrapper{
+    width: 60%;
+  }
+
+  .form button{
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 491px){
+  .wrapper{
+    width: 80%;
+  }
+  .form button{
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 350px){
+  .wrapper{
+    width: 90%;
+    font-size: small;
+  }
+
+  .form button{
+    width: 30%;
   }
 }

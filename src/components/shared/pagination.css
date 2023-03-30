@@ -1,0 +1,21 @@
+.pagination{
+    width: 94%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    position: absolute;
+    bottom: 12px;
+    /* color: #5c5c5c; */
+  }
+
+  .pagination button{
+    width: 20px;
+    padding: 1px;
+    border: none;
+  }
+
+  .activePage{
+    background-color: rgb(75 156 242);
+    color: white;
+  }
