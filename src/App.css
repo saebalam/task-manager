@@ -22,7 +22,7 @@ body{
   background-color: rgb(28, 7, 48);
   width: 25%;
   margin: 0 auto;
-  height: 465px;
+  height: 485px;
   color: rgb(231, 227, 227);
   padding: 0 10px;
   /* border: 1px solid yellow; */
@@ -33,6 +33,7 @@ body{
 
 .header{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   gap: 20px;
   align-items: center;
